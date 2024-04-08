@@ -1,0 +1,16 @@
+.work__title {
+    font-size: var(--size-lg);
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pic img {
+    width: 80%;
+    border-radius: 20px;
+}

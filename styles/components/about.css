@@ -1,3 +1,8 @@
+.about {
+    display: flex;
+    justify-content: center;
+}
+
 .about__content {
     display: flex;
     flex-direction: column;
@@ -24,11 +29,16 @@
     color: var(--clr-dark);
 }
 
+.about__skill-title {
+    font-size: var(--size-sm);
+    color: var(--clr-dark);
+    padding-left: 20px;
+}
+
 .about__ul {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding-left: 1em;
 }
 
 .about__ul .a {
@@ -65,6 +75,10 @@
     color: var(--clr-purple);
 }
 
+.certificates {
+    margin: 50px 20px 50px 20px;
+}
+
 .certificate__wrap {
     display: flex;
     gap: 1rem;
@@ -81,12 +95,7 @@
 
 /* @media (min-width: 768px) {} */
 
-@media (min-width: 1024px) {
-    .about {
-        display: flex;
-        justify-content: space-around;
-    }
-}
+/* @media (min-width: 1024px) {} */
 
 /* @media (min-width: 1280px) {} */
 
@@ -107,13 +116,7 @@
 
 /* @media (min-width: 768px) {} */
 
-@media (min-width: 1024px) {
-    .about {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
+/* @media (min-width: 1024px) {} */
 
 /* @media (min-width: 1280px) {} */
 
