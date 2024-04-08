@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev server</title>
+</head>
+
+<body class="dark-mode">
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li><a class="header__link" href="#about"></a>About</li>
+        <li><a class="header__link" href="#work"></a>Work</li>
+        <li><a class="header__link" href="#contact"></a>Contact</li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="#">Resume</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- mobile -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#work">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end mobile -->
+  <main>
+    <section class="picme container">
+      <div class="frame">
+        <img class="me__img" src="./public/mme.jpg" alt="Profile picture">
+      </div>
+      <h2 class="me__subtitle">Hi, I'm Aum 🐻</h2>
+      <h1 class="me__title">Front-End Developer</h1>
+      <p class="me_description">I have the skills to use <strong>HTML, CSS, JavaScript</strong> very well</p>
+      <a class="me__btn btn" href="#">Reach out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt tempore
+          repellat adipisci nihil eligendi ipsa pariatur quisquam aut impedit, nostrum dolorem magnam unde molestias
+          deleniti, necessitatibus voluptatum officia delectus.</p>
+        <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati
+          fuga consequatur amet exercitationem optio nulla itaque aspernatur veritatis assumenda?</p>
+        <p class="about__description">Lorem ipsum dolor sit amet <a>consectetur</a> adipisicing elit. Similique, vitae.
+        </p>
+        <hr class="about__hr">
+        <div class="skills">
+          <h3 class="about__title">Skills</h3>
+          <ul class="about__ul">
+            <li class="about__list a">HTML</li>
+            <li class="about__list a">CSS</li>
+            <li class="about__list b">JavaScript</li>
+            <li class="about__list b">Responsive Design</li>
+            <li class="about__list b">Bootstrap</li>
+            <li class="about__list b">PHP</li>
+            <li class="about__list b">Python</li>
+            <li class="about__list b">Java</li>
+            <li class="about__list b">SQL</li>
+            <li class="about__list c">React.JS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="certificates">
+        <h3 class="certificate__title">Certificates</h3>
+        <div class="certificate__wrap">
+          <p>Software and Applications -
+            Systems Developer, 2020
+          </p>
+          <a class="cer__link" href="https://tpqi-net.tpqi.go.th/cer/print/MTU0MTYz/Mw==" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg></a>
+        </div>
+        <div class="certificate__wrap">
+          <p>SQL, 2023</p>
+          <a class="cer__link" href="https://school.borntodev.com/certificate/ezGqStTv1Bcm" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg>
+          </a>
+          <!-- <img src="./public/me.jpg" alt="Profile picture"> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container section">
+    <h3 class="footer__title">natthamon</h3>
+  </footer>
+  <!-- <article class="container">
+    <h1>hello world</h1>
+    <p><strong>Lorem</strong>, ipsum dolor sit amet consectetur adipisicing elit. Totam vero optio soluta libero
+      reiciendis. Quod inventore, nemo repellendus consequatur iste fuga modi illo quis sit porro omnis quia voluptatum
+      animi facilis a quo. Corrupti incidunt temporibus maxime recusandae, architecto aperiam blanditiis? Nemo iusto
+      suscipit in <a>consectetur</a> accusamus earum tempore eum.</p>
+    <button class="btn">btn</button>
+  </article>
+  <article class="container section">
+    <h1>hello world</h1>
+    <p><strong>Lorem</strong>, ipsum dolor sit amet consectetur adipisicing elit. Totam vero optio soluta libero
+      reiciendis. Quod inventore, nemo repellendus consequatur iste fuga modi illo quis sit porro omnis quia voluptatum
+      animi facilis a quo. Corrupti incidunt temporibus maxime recusandae, architecto aperiam blanditiis? Nemo iusto
+      suscipit in <a>consectetur</a> accusamus earum tempore eum.</p>
+    <button class="btn">btn</button>
+  </article> -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

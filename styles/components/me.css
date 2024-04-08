@@ -1,0 +1,144 @@
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-image: linear-gradient(312.25deg, var(--clr-babyblue) 0%,     rgba(255, 255, 255, 0) 66.19%);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.picme {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.me__img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
+.me_subtitle {
+    color: var(--clr-dark);
+    font-size: var(--size-base);
+    line-height: 0.9;
+}
+
+.me__title {
+    color: var(--clr-dark);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+}
+
+.me__description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-dark);
+}
+
+.me__btn {
+    text-transform: capitalize;
+    font-size: var(--size-sm);
+}
+
+@media (min-width: 475px) {
+    .picme {
+        gap: 1.5rem;
+    }
+
+    .me__img {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .me_subtitle {
+        font-size: var(--size-lg);
+    }
+
+    .me__title {
+        font-size: var(--size-5xl);
+    }
+
+    .me__description {
+        font-size: var(--size-base);
+    }
+
+    .me__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* @media (min-width: 640px) {} */
+
+/* @media (min-width: 768px) {} */
+
+@media (min-width: 1024px) {
+    .frame{
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+    .me__img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .me_subtitle {
+        font-size: var(--size-2xl);
+    }
+
+    .me__title {
+        font-size: var(--size-7xl);
+    }
+
+    .me__description {
+        font-size: var(--size-lg);
+    }
+
+    .me__btn {
+        font-size: var(--size-lg);
+    }
+}
+
+@media (min-width: 1280px) {
+    .frame{
+        width: 10.5rem;
+        height: 10.5rem;
+    }
+    .picme {
+        gap: 2rem;
+    }
+
+    .me__img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .me_subtitle {
+        font-size: var(--size-4xl);
+    }
+
+    .me__title {
+        font-size: var(--size-9xl);
+    }
+
+    .me__description {
+        font-size: var(--size-xl);
+    }
+
+    .me__btn {
+        font-size: var(--size-xl);
+    }
+}
+
+/* @media (min-width: 1536px) {} */
