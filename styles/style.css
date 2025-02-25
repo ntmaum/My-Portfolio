@@ -1,94 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --clr-dark: #020617;
-    --clr-dark600: #475569;
-    --clr-light: #f5f5f4;
-    --clr-yellow300: #fdba74;
-    --clr-yellow500: #f59e0b;
-    --clr-lightyellow: #fffbeb;
-    --clr-peach: #f87171;
-    --clr-babyblue: #93c5fd;
-    --clr-peony: #f472b6;
-    --clr-purple: #8b5cf6;
-    --clr-blackberry: #4e33bd;
-    --clr-lightblackberry: #573cc4;
+    --clr-light: #ffffff;
+    --clr-dark: #ACACAC;
+    --clr-blackgray: #4A4A54;
+    --clr-black: #111111;
+    --clr-blackwhite: #111111;
+    --clr-blackbabyblue: #a8bfe9;
+    --clr-babyblue: #a8bfe9;
+    --clr-white: #a8bfe9;
+    --clr-babyblueyellow: #FFDEAD;
+    --clr-goldpink: #DA70D6;
+    --clr-bluewhite: #ffff;
+    --clr-lightblueyellow: #f2c361;
+    --clr-sun: #fdba74;
+    --clr-btnblur: #9999A7d2;
+    --clr-hrcolor: #ffffff;
+
+    --shine: drop-shadow(0 -5px 10px rgba(168, 191, 233, 0.5));
+    --bg: url(../public/t3.png);
+    --fairy: url(../public/fairy-light.gif);
+    --filtergray: grayscale(10%);
+    --shadow: 0 0 15px #00000050;
+
     /* size */
-    --size-xxs: 0.5rem;
-    --size-xs: 0.75rem;
-    --size-sm: 0.875rem;
-    --size-base: 1rem;
-    --size-lg: 1.125rem;
-    --size-xl: 1.25rem;
-    --size-2xl: 1.5rem;
-    --size-3xl: 1.875rem;
-    --size-4xl: 2.25rem;
-    --size-5xl: 3rem;
-    --size-6xl: 3.75rem;
-    --size-7xl: 4.5rem;
-    --size-8xl: 6rem;
-    --size-9xl: 8rem;
-    --size-10xl: 10rem;
+    --size-xxs: 8px;
+    --size-ms: 10px;
+    --size-xs: 12px;
+    --size-sm: 14px;
+    --size-base: 16px;
+    --size-lg: 18px;
+    --size-xl: 20px;
+    --size-2xl: 24px;
+    --size-3xl: 30px;
+    --size-4xl: 36px;
+    --size-5xl: 48px;
+    --size-6xl: 60px;
+    --size-7xl: 72px;
+    --size-8xl: 96px;
+    --size-9xl: 128px;
+    --size-10xl: 160px;
 }
 
 * {
     margin: 0;
-    line-height: calc(1em + 0.5rem);
-}
+    padding: 0;
 
-html {
-    scroll-behavior: smooth;
+    /* line-height: calc(1em + 0.5rem); */
 }
 
 .dark-mode {
-    --clr-light: #020617;
-    --clr-dark600: #475569;
+    --clr-light: #ACACAC;
     --clr-dark: #f5f5f4;
-    --clr-yellow300: #fdba74;
-    --clr-yellow500: #f59e0b;
-    --clr-lightyellow: #020617;
-    --clr-peach: #f87171;
-    --clr-babyblue: #93c5fd;
-    --clr-peony: #f472b6;
-    --clr-purple: #8b5cf6;
-    --clr-blackberry: #4e33bd;
-    --clr-lightblackberry: #573cc4;
+    --clr-blackgray: #111111;
+    --clr-blackwhite: #ffffff;
+    --clr-blackbabyblue: #111111;
+    --clr-white: #ffffff;
+    --clr-babyblueyellow: #a8bfe9;
+    --clr-goldpink: gold;
+    --clr-bluewhite: #005eee;
+    --clr-lightblueyellow: #ccd4ff;
+    --clr-sun: #111111;
+    --clr-btnblur: #ffffffd2;
+    --clr-hrcolor: #ACACAC;
+
+    --shine: drop-shadow(0 -5px 10px rgba(255, 255, 255, .5));
+    --bg: url(../public/t5.png);
+    --fairy: url(../public/fairy-dark.jpg);
+    --filtergray: grayscale(50%);
 }
 
-body {
+html {
+    height: 100%;
+}
+
+body,
+html {
     font-family: "Prompt", sans-serif;
-    background-color: var(--clr-lightyellow);
+    background-color: var(--clr-light);
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
     color: var(--clr-dark);
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
+    /* position: relative;
+    z-index: 0; */
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
     user-select: none;
 }
 
+body::before {
+    content: "";
+    background: var(--bg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: fixed;
+    top: -20%;
+    right: -20%;
+    bottom: -20%;
+    left: -20%;
+    opacity: var(--opacity);
+    filter: var(--filtergray) var(--shine);
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(0px) scale(.7) translateZ(0px);
+    }
+
+    to {
+        transform: translateY(0px) scale(.72) translateZ(0px);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 button {
-    display: inline-block;
-    padding: 0;
+    /* display: inline-block; */
+    /* padding: 0; */
     border: none;
     background: none;
     cursor: pointer;
     color: inherit;
 }
 
-a {
-    color: var(--clr-yellow500);
-}
-
-strong {
-    color: var(--clr-purple);
+hr {
+    color: white;
 }
 
 /* scrollbar */
 body::-webkit-scrollbar {
     width: 8px;
+    background-color: white;
 }
 
 body::-webkit-scrollbar-track {
@@ -96,6 +149,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--clr-babyblue);
-    outline: 1px solid var(--clr-babyblue);
+    background-color: var(--clr-blackgray);
+    border-radius: 30px;
 }

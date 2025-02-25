@@ -1,0 +1,776 @@
+@media (min-width: 300px) and (max-width: 500px) {
+    .header {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav svg {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+        cursor: pointer;
+    }
+
+    .sidenav {
+        display: block;
+    }
+
+    /* Header */
+    .header .header__menu .header__sun-mobile {
+        font-size: var(--size-2xl);
+    }
+
+    /* Index Page*/
+    .all-about-me {
+        padding: var(--size-base);
+        padding-top: var(--size-ms);
+    }
+
+    .all-about-me .container .grid-container {
+        display: block;
+        margin-bottom: 4.5%;
+    }
+
+    .all-about-me .content-left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: var(--size-xs);
+    }
+
+    .black-dots {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .white-dots {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .content-left h1 {
+        font-size: var(--size-xl);
+        line-height: var(--size-3xl);
+    }
+
+    .btn-group {
+        display: inherit;
+        justify-items: center;
+        align-items: baseline;
+    }
+
+    .loader {
+        --sizeLoader: var(--size-4xl);
+    }
+
+    .btn-group .btn-resume,
+    .btn-group .btn-work {
+        font-size: var(--size-xs);
+        padding: 2px 7px;
+    }
+
+    .btn-group .btn-resume svg,
+    .btn-group .btn-work svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .btn-group .btn-resume::after {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .content-Right .my-skills {
+        padding: 3% 10% 3% 10%;
+    }
+
+    .content-Right .my-skills p {
+        font-size: var(--size-sm);
+    }
+
+    .content-Right .my-skills ul {
+        font-size: var(--size-xs);
+        line-height: var(--size-xs);
+        margin-top: 5px;
+    }
+
+    .content-Right .my-skills ul li::marker {
+        font-size: var(--size-base);
+    }
+
+    .my-contact {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .contact {
+        line-height: var(--size-sm);
+        bottom: var(--size-3xl);
+    }
+
+    .content-Right .contact svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .toggle svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .tooltip {
+        font-size: var(--size-xxs);
+        padding: 0px 2px;
+    }
+
+    .tooltip::before {
+        width: 3px;
+        height: 3px;
+        bottom: -1px;
+    }
+
+    a:hover .tooltip {
+        top: -85%;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .content-Right .location svg {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .content-Right .location p {
+        font-size: var(--size-ms);
+        margin-top: -6px;
+    }
+
+    .content-Right .age h1 {
+        font-size: var(--size-xs);
+    }
+
+    .content-Right .age p {
+        font-size: var(--size-ms);
+    }
+
+    .content .about-me,
+    .my-work {
+        font-size: var(--size-sm);
+        padding: 3%;
+    }
+
+    .content .about-me {
+        margin-bottom: var(--size-lg);
+    }
+
+    .content .about-me p {
+        font-size: var(--size-xs);
+    }
+
+    .content .my-work .work {
+        padding: 4% 0 5% 0;
+    }
+
+    .content .my-work .w-card {
+        width: var(--size-8xl);
+        height: 80px;
+        font-size: var(--size-xxs);
+        padding: 2%;
+    }
+
+    .content .my-work .w-card img {
+        width: 85px;
+    }
+
+    .content {
+        padding: var(--size-base);
+    }
+
+    /* Works Page */
+
+    .title-description {
+        border-radius: var(--size-xl);
+    }
+
+    .title-description h1 {
+        font-size: var(--size-sm);
+    }
+
+    .title-description p {
+        font-size: var(--size-ms);
+    }
+
+
+    .work-container .work-card {
+        width: 45%;
+        margin: 13px 13px 0 0;
+    }
+
+    .work-container .work-card span {
+        font-size: var(--size-ms);
+    }
+
+    .modal-detail .slideshow-container .slide1,
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5,
+    .slide6 {
+        max-height: 350px;
+
+    }
+
+    .modal-detail .slideshow-container .number {
+        font-size: var(--size-xs);
+    }
+
+    .modal-detail .slideshow-container .close1,
+    .close2,
+    .close3,
+    .close4,
+    .close5,
+    .close6 {
+        padding: 0 2.1% 0 2.1%;
+        font-size: var(--size-lg);
+    }
+
+    .modal-detail .slideshow-container .prev-next {
+        width: 20%;
+        height: var(--size-base);
+        top: -10px;
+    }
+
+    .modal-detail .slideshow-container .prev,
+    .next {
+        font-size: var(--size-xxs);
+        padding: 0 5px 0 5px;
+    }
+
+    .modal-detail .slideshow-container .dots {
+        margin-top: -5px;
+    }
+
+    .modal-detail .slideshow-container .dot1,
+    .dot2,
+    .dot3,
+    .dot4,
+    .dot5,
+    .dot6 {
+        width: 5px;
+        height: 5px;
+    }
+
+    #myModal5 .prev-next {
+        width: 30%;
+    }
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    /* Header */
+
+    .header .header__menu {
+        padding: 0;
+    }
+
+    .header .header__menu .black-dotl {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+    }
+
+    .header .header__menu .header-center {
+        font-size: var(--size-ms);
+        margin-left: var(--size-sm);
+    }
+
+    .header .header__menu .header-right p {
+        font-size: var(--size-ms);
+    }
+
+    .header .header__menu .header-right sup {
+        font-size: var(--size-xxs);
+    }
+
+
+    .header .header__menu .header__sun {
+        font-size: var(--size-2xl);
+    }
+
+
+    .header .header__menu .header-center svg {
+        width: var(--size-xxs) !important;
+    }
+
+
+    .header .header__menu .header__profile .fairy {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+    }
+
+    .header .header__menu .black-dotm {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+        box-shadow: 0 0 0 3px var(--clr-light);
+        top: 60%;
+    }
+
+    /* Index Page*/
+    .all-about-me {
+        padding: var(--size-2xl);
+        padding-top: 10%;
+    }
+
+    .all-about-me .container .grid-container {
+        grid-template-columns: 50% 50%;
+        gap: 1%;
+        margin-bottom: 2%;
+    }
+
+    .black-dots {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .white-dots {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .content-left h1 {
+        font-size: var(--size-xl);
+        line-height: var(--size-3xl);
+    }
+
+    .loader {
+        --sizeLoader: var(--size-4xl);
+    }
+
+    .btn-group .btn-resume,
+    .btn-group .btn-work {
+        font-size: var(--size-ms);
+        padding: 1px 5px;
+    }
+
+    .btn-group .btn-resume svg,
+    .btn-group .btn-work svg {
+        width: var(--size-lg);
+        height: var(--size-lg);
+    }
+
+    .btn-group .btn-resume::after {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .content-Right {
+        gap: 3%;
+    }
+
+    .content-Right .my-skills {
+        padding: 0 12% 0 12%;
+    }
+
+    .content-Right .my-skills p {
+        font-size: var(--size-xs);
+    }
+
+    .content-Right .my-skills ul {
+        font-size: var(--size-ms);
+        line-height: var(--size-ms);
+        margin-top: -10px;
+    }
+
+    .content-Right .my-skills ul li::marker {
+        font-size: var(--size-base);
+    }
+
+    .contact {
+        line-height: var(--size-sm);
+        bottom: var(--size-3xl);
+    }
+
+    .content-Right .contact svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .toggle svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .tooltip {
+        font-size: var(--size-xxs);
+        padding: 0px 2px;
+    }
+
+    .tooltip::before {
+        width: 3px;
+        height: 3px;
+        bottom: -1px;
+    }
+
+    a:hover .tooltip {
+        top: -85%;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .content-Right .location-age {
+        height: 85%;
+    }
+
+    .content-Right .location svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .content-Right .location p {
+        font-size: var(--size-xxs);
+        margin-top: -6px;
+    }
+
+    .content-Right .age h1 {
+        font-size: var(--size-ms);
+    }
+
+    .content-Right .age p {
+        font-size: var(--size-xxs);
+    }
+
+    .content .about-me,
+    .my-work {
+        font-size: var(--size-xs);
+        padding: 4%;
+    }
+
+    .content .about-me p {
+        font-size: var(--size-ms);
+    }
+
+    .content .my-work .work {
+        padding: 4% 0 5% 0;
+    }
+
+    .content .my-work .w-card {
+        width: var(--size-9xl);
+        height: 100px;
+    }
+
+    .content .my-work .w-card img {
+        width: 115px;
+    }
+
+    .content {
+        padding: var(--size-base);
+    }
+
+    /* Works Page */
+
+    .title-description {
+        border-radius: var(--size-xl);
+    }
+
+    .title-description h1 {
+        font-size: var(--size-base);
+    }
+
+    .title-description p {
+        font-size: var(--size-ms);
+    }
+
+
+    .work-container .work-card {
+        width: 40%;
+    }
+
+    .work-container .work-card span {
+        font-size: var(--size-ms);
+    }
+
+    .modal-detail .slideshow-container .slide1,
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5,
+    .slide6 {
+        max-height: 400px;
+
+    }
+
+    .modal-detail .slideshow-container .number {
+        font-size: var(--size-sm);
+    }
+
+    .modal-detail .slideshow-container .close1,
+    .close2,
+    .close3,
+    .close4,
+    .close5,
+    .close6 {
+        padding: 0 2.1% 0 2.1%;
+        font-size: var(--size-xl);
+    }
+
+    .modal-detail .slideshow-container .prev-next {
+        width: 22%;
+        height: var(--size-xl);
+        top: -10px;
+    }
+
+    .modal-detail .slideshow-container .prev,
+    .next {
+        font-size: var(--size-xs);
+        padding: 0 13px 0 13px;
+    }
+
+    .modal-detail .slideshow-container .dots {
+        margin-top: 0;
+    }
+
+    .modal-detail .slideshow-container .dot1,
+    .dot2,
+    .dot3,
+    .dot4,
+    .dot5,
+    .dot6 {
+        width: var(--size-xxs);
+        height: var(--size-xxs);
+    }
+
+    #myModal5 .prev-next {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 767px) {
+
+    /* Index */
+    .all-about-me {
+        padding-top: 7%;
+    }
+
+    .all-about-me .container .grid-container {
+        grid-template-columns: 50% 45%;
+        gap: 5%;
+    }
+
+    .content .about-me,
+    .my-work {
+        padding: 2%;
+    }
+
+    /* Works Page */
+    .modal-detail .slideshow-container .slide1,
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5,
+    .slide6 {
+        max-height: 450px;
+
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1100px) {
+
+    /* Header */
+    .header .header__menu {
+        padding: 2px 0;
+    }
+
+    .header .header__menu .black-dotl {
+        width: var(--size-4xl);
+        height: var(--size-4xl);
+    }
+
+    .header .header__menu .header-center {
+        font-size: var(--size-sm);
+    }
+
+    .header .header__menu .header-right p {
+        font-size: var(--size-sm);
+    }
+
+    .header .header__menu .header__sun {
+        font-size: var(--size-3xl);
+    }
+
+    .header .header__menu .header__profile .fairy {
+        width: var(--size-4xl);
+        height: var(--size-4xl);
+    }
+
+    .header .header__menu .black-dotm {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+        box-shadow: 0 0 0 6px var(--clr-light);
+        top: 65%;
+    }
+
+
+    /* Index Page*/
+    .black-dots {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .white-dots {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .content-left h1 {
+        font-size: var(--size-3xl);
+    }
+
+    .loader {
+        --sizeLoader: var(--size-5xl);
+    }
+
+    .btn-group .btn-resume,
+    .btn-group .btn-work {
+        font-size: var(--size-sm);
+        padding: 3px 8px;
+    }
+
+    .btn-group .btn-resume svg,
+    .btn-group .btn-work svg {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .btn-group .btn-resume::after {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+    }
+
+    .all-about-me .container .grid-container {
+        grid-template-columns: 50% 40%;
+        gap: 10%;
+        margin-bottom: 3%;
+    }
+
+    .content-Right .my-skills p {
+        font-size: var(--size-sm);
+    }
+
+    .content-Right .my-skills ul {
+        font-size: var(--size-xs);
+    }
+
+    .content-Right .my-skills ul li::marker {
+        font-size: var(--size-lg);
+    }
+
+    .content-Right .location-age {
+        height: 75%;
+    }
+
+    .content-Right .location svg {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+    }
+
+    .content-Right .age h1 {
+        font-size: var(--size-sm);
+    }
+
+    .content-Right .age p {
+        font-size: var(--size-xs);
+    }
+
+    .content .about-me,
+    .my-work {
+        font-size: var(--size-sm);
+    }
+
+    .content .about-me p {
+        font-size: 11px;
+    }
+
+
+    .content .my-work .work {
+        padding: 4% 0 5% 0;
+    }
+
+    .content .my-work .w-card {
+        width: var(--size-9xl);
+        height: 100px;
+    }
+
+    .content .my-work .w-card img {
+        width: 115px;
+    }
+
+    .content {
+        padding: var(--size-2xl);
+    }
+
+    /* Works Page */
+    .title-description h1 {
+        font-size: var(--size-xl);
+    }
+
+    .title-description p {
+        font-size: var(--size-sm);
+    }
+
+    .work-container .work-card span {
+        font-size: var(--size-lg);
+    }
+
+    .modal-detail .slideshow-container .slide1,
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5,
+    .slide6 {
+        max-height: 600px;
+
+    }
+
+    .modal-detail .slideshow-container .number {
+        font-size: var(--size-lg);
+    }
+
+    .modal-detail .slideshow-container .close1,
+    .close2,
+    .close3,
+    .close4,
+    .close5,
+    .close6 {
+        padding: 0 2% 0 2%;
+    }
+
+    .modal-detail .slideshow-container .prev-next {
+        width: 18%;
+        height: var(--size-2xl);
+    }
+
+    .modal-detail .slideshow-container .prev,
+    .next {
+        font-size: var(--size-base);
+    }
+
+    .modal-detail .slideshow-container .dot1,
+    .dot2,
+    .dot3,
+    .dot4,
+    .dot5,
+    .dot6 {
+        width: var(--size-ms);
+        height: var(--size-ms);
+    }
+
+    #myModal5 .prev-next {
+        width: 45%;
+    }
+}

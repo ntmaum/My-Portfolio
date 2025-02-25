@@ -5,168 +5,497 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>My portfolio</title>
+
 </head>
 
 <body class="dark-mode">
-  <header class="header container">
+  <!-- Header -->
+  <header class="header" id="header">
     <nav>
       <ul class="header__menu">
-        <li><a class="header__link" href="#about"></a>About</li>
-        <li><a class="header__link" href="#work"></a>Work</li>
-        <li><a class="header__link" href="#contact"></a>Contact</li>
-        <li class="header__line"></li>
         <li>
-          <button id="theme-toggle" class="header__sun">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-            </svg>
-          </button>
+          <div class="black-dotl"></div>
         </li>
-        <li>
-          <a class="header__resume btn" href="#">Resume</a>
+        <li class="header-center">
+          <a href="index.html">
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 25"
+                style="width: 12px; fill: var(--clr-blackgray);">
+                <path d="M3.41 2H16V0H1a1 1 0 0 0-1 1v16h2V3.41l28.29 28.3 1.41-1.41z" data-name="7-Arrow Up" />
+              </svg>Home
+            </div>
+          </a>
+          <a href="index.html">
+            <div>Contact<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 25"
+                style="width: 12px; fill: var(--clr-blackgray);">
+                <path d="M31 0H15v2h13.59L.29 30.29 1.7 31.7 30 3.41V16h2V1a1 1 0 0 0-1-1z" data-name="5-Arrow Up" />
+              </svg>
+            </div>
+          </a>
+        </li>
+        <div class="black-dotm"></div>
+        <li class="header-right">
+          <div class="header__profile">
+            <div class="fairy">
+            </div>
+            <div class="header__right-text" style="width: 65%;">
+              <p class="wrap">Natthamon</p>
+              <sup class="wrap">aumntm</sup>
+            </div>
+          </div>
+          <div class="header__sun">
+            <input id="theme-toggle" type="checkbox">
+            <label for="theme-toggle"></label>
+          </div>
+          </div>
         </li>
       </ul>
-      <button class="header__bars">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
     </nav>
   </header>
-  <!-- mobile -->
-  <div class="mobile-nav">
-    <nav>
-      <ul class="mobile-nav__menu">
-        <li>
-          <a class="mobile-nav__link" href="#about">About</a>
-        </li>
-        <li>
-          <a class="mobile-nav__link" href="#work">Work</a>
-        </li>
-        <li>
-          <a class="mobile-nav__link" href="#contact">Contact</a>
-        </li>
-        <li class="mobile-nav__link-line"></li>
-        <li>
-          <button id="theme-toggle" class="mobile-nav__sun">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-            </svg>
-          </button>
-        </li>
-        <li>
-          <a class="mobile-nav__btn btn" href="">Resume</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <!-- end mobile -->
-  <main>
-    <section class="picme container">
-      <div class="frame">
-        <img class="me__img" src="./public/mme.jpg" alt="Profile picture">
-      </div>
-      <h2 class="me__subtitle">Hi, I'm Aum 🐻</h2>
-      <h1 class="me__title">Natthamon Aonchawieng</h1>
-      <p class="me_description">I have the skills to use <strong>HTML, CSS, JavaScript</strong> very well</p>
-      <a class="me__btn btn" href="#">Click me!</a>
-    </section>
-    <section id="about" class="about container section">
-      <div class="about__content">
-        <h2 class="about__title">About</h2>
-        <p class="about__description">Hello, my name is Natthamon Aonchawieng. I am a 4th
-          year student. I'm going to graduate with a bachelor's
-          degree. Faculty of Informatics, Information Technology,
-          Mahasarakham University.
-        </p>
-        <!-- <p class="about__description"></p> -->
-        <!-- <p class="about__description"><a></a> -->
-        </p>
-      </div>
-    </section>
-    <hr class="about__hr">
-    <section class="skill">
-      <div class="skills">
-        <h3 class="about__skill-title">Skills</h3>
-        <ul class="about__ul">
-          <li class="about__list a">HTML</li>
-          <li class="about__list a">CSS</li>
-          <li class="about__list b">JavaScript</li>
-          <li class="about__list b">PHP</li>
-          <li class="about__list b">Bootstrap</li>
-          <li class="about__list b">Responsive Design</li>
-          <li class="about__list b">SQL</li>
-          <li class="about__list c">Python</li>
-          <li class="about__list c">Java</li>
-          <li class="about__list c">React.JS</li>
-          <li class="about__list c">Go</li>
-          <li class="about__list c">Angular</li>
-          <li class="about__list c">Jaspersoft</li>
-        </ul>
-      </div>
-    </section>
-    <section class="cer">
-      <div class="certificates">
-        <h3 class="certificate__title">Certificates</h3>
-        <div class="certificate__wrap">
-          <p>Software and Applications -
-            Systems Developer, 2020
-          </p>
-          <a class="cer__link" href="https://tpqi-net.tpqi.go.th/cer/print/MTU0MTYz/Mw==" target="_blank">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <div class="certificate__wrap">
-          <p>SQL, 2023</p>
-          <a class="cer__link" href="https://school.borntodev.com/certificate/ezGqStTv1Bcm" target="_blank">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-          <!-- <img src="./public/me.jpg" alt="Profile picture"> -->
-        </div>
-      </div>
-    </section>
-    <section class="Work">
-      <div class="detail">
-        <h3 class="work__title">Work</h3>
-        <div class="pic">
-          <img src="./public/bws.png" class="img-fluid" alt="...">
-        </div>
-        <div class="pic">
-          <img src="./public/internship.png" class="img-fluid" alt="...">
-        </div>
-        <div class="pic">
-          <img src="./public/thaiselect.png" class="img-fluid" alt="...">
-        </div>
-        <div class="pic">
-          <img src="./public/finansia.png" class="img-fluid" alt="...">
-        </div>
-        <div class="pic">
-          <img src="./public/carcare.png" class="img-fluid" alt="...">
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer container section">
-    <h3 class="footer__title">Contact</h3>
-    <div class="contact-me">
-      <a href="tel:065-881-2673" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100008373367227&mibextid=YMEMSu" target="_blank"><i
-          class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/aum.natthamon?igsh=MTI0eHBqZjVud3h4MA%3D%3D&utm_source=qr" target="_blank"><i
-          class="fa-brands fa-instagram"></i></a>
-      <a href="https://line.me/ti/p/RvXxM-JNux" target="_blank"><i class="fa-brands fa-line"></i></a>
+  <section class="all-about-me">
+
+    <div class="mobile-nav" onclick="openNav()">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+        <path style="fill:var(--clr-blackgray)"
+          d="M43.496,14.587c0.032-2.093-1.558-3.053-3.602-3.503c-1.325-0.353-2.826-0.393-4.213-0.446 c-3-0.116-6.003-0.19-9.006-0.21c-2.264-0.015-4.527,0.015-6.789,0.069c-0.41-0.003-0.82-0.01-1.229-0.012 c-2.517-0.015-5.031,0.03-7.527,0.296c-1.9,0.202-4.571,0.338-5.325,1.955c-0.641,1.376-0.799,3.265-0.038,4.617 c0.768,1.365,2.444,2.167,4.306,2.451c2.087,0.317,4.245,0.169,6.354,0.122c2.744-0.061,5.487-0.123,8.231-0.184 c2.66-0.059,5.321-0.118,7.982-0.179c1.111-0.025,2.239-0.049,3.349-0.153c0.303-0.003,0.606-0.002,0.908-0.01 c1.88-0.051,3.92-0.375,5.209-1.512c0.703-0.62,1.139-1.383,1.215-2.162C43.432,15.341,43.49,14.953,43.496,14.587z">
+        </path>
+        <path style="fill:var(--clr-blackgray)"
+          d="M43.496,39.587c0.032-2.093-1.558-3.053-3.602-3.503c-1.325-0.353-2.826-0.393-4.213-0.446 c-3-0.116-6.003-0.19-9.006-0.21c-2.264-0.015-4.527,0.015-6.789,0.069c-0.41-0.003-0.82-0.01-1.229-0.012 c-2.517-0.015-5.031,0.03-7.527,0.296c-1.9,0.202-4.571,0.338-5.325,1.955c-0.641,1.376-0.799,3.265-0.038,4.617 c0.768,1.365,2.444,2.167,4.306,2.451c2.087,0.317,4.245,0.169,6.354,0.122c2.744-0.061,5.487-0.123,8.231-0.184 c2.66-0.059,5.321-0.118,7.982-0.179c1.111-0.025,2.239-0.049,3.349-0.153c0.303-0.003,0.606-0.002,0.908-0.01 c1.88-0.051,3.92-0.375,5.209-1.512c0.703-0.62,1.139-1.383,1.215-2.162C43.432,40.341,43.49,39.953,43.496,39.587z">
+        </path>
+        <path style="fill:var(--clr-blackgray)"
+          d="M5.258,27.837C5.226,29.93,6.817,30.889,8.86,31.34c1.325,0.353,2.826,0.393,4.213,0.446 c3,0.116,6.003,0.19,9.006,0.21c2.264,0.015,4.527-0.015,6.789-0.069c0.41,0.003,0.82,0.01,1.229,0.012 c2.517,0.015,5.031-0.03,7.527-0.296c1.9-0.202,4.571-0.338,5.325-1.955c0.641-1.376,0.799-3.265,0.038-4.617 c-0.768-1.365-2.444-2.167-4.306-2.451c-2.087-0.317-4.245-0.169-6.354-0.122c-2.744,0.061-5.487,0.123-8.231,0.184 c-2.66,0.059-5.321,0.118-7.982,0.179c-1.111,0.025-2.239,0.049-3.349,0.153c-0.303,0.003-0.606,0.002-0.908,0.01 c-1.88,0.051-3.92,0.375-5.209,1.512c-0.703,0.62-1.139,1.383-1.215,2.162C5.322,27.082,5.264,27.47,5.258,27.837z">
+        </path>
+        <path style="fill:var(--clr-white)"
+          d="M9.997,28.141c1.494-0.401,2.97-0.445,4.556-0.524c1.677-0.083,3.355-0.145,5.033-0.187 c0.784-0.02,1.537-0.676,1.5-1.5c-0.036-0.796-0.66-1.521-1.5-1.5c-1.744,0.044-3.488,0.108-5.23,0.197 c-1.727,0.088-3.478,0.171-5.156,0.621c-0.782,0.21-1.261,1.068-1.048,1.845C8.368,27.882,9.212,28.352,9.997,28.141L9.997,28.141 z">
+        </path>
+        <path style="fill:var(--clr-light)"
+          d="M36.7,42.817c1.127-0.009,2.295-0.194,3.276-0.781c0.87-0.52,1.571-1.346,1.819-2.341 c0.156-0.624-0.808-0.891-0.964-0.266c-0.454,1.819-2.484,2.374-4.131,2.388C36.057,41.822,36.055,42.822,36.7,42.817L36.7,42.817 z">
+        </path>
+        <path style="fill:var(--clr-light)"
+          d="M7.474,14.813c0.199-0.855,1.009-1.307,1.801-1.514c1.042-0.272,2.155-0.329,3.221-0.46 c0.268-0.033,0.5-0.206,0.5-0.5c0-0.245-0.23-0.533-0.5-0.5c-0.656,0.081-1.312,0.161-1.968,0.242 c-0.604,0.075-1.216,0.146-1.797,0.334c-1.016,0.329-1.969,1.045-2.222,2.132C6.364,15.173,7.328,15.44,7.474,14.813L7.474,14.813 z">
+        </path>
+        <path style="fill:var(--clr-blackgray)"
+          d="M44.07,34.516c0.26-0.239,0.525-0.472,0.796-0.698c0.136-0.113,0.273-0.224,0.412-0.333 c0.024-0.019,0.142-0.11,0.022-0.018c-0.121,0.093-0.002,0.002,0.022-0.017c0.074-0.057,0.149-0.113,0.224-0.168 c0.568-0.42,1.158-0.809,1.766-1.167c0.451-0.266,0.652-0.913,0.359-1.368c-0.293-0.454-0.886-0.643-1.368-0.359 c-1.307,0.77-2.532,1.686-3.647,2.714c-0.386,0.356-0.387,1.059,0,1.414C43.068,34.895,43.658,34.896,44.07,34.516L44.07,34.516z">
+        </path>
+        <path style="fill:var(--clr-blackgray)"
+          d="M44.885,36.929c0.316,0.05,0.624,0.138,0.918,0.262c-0.08-0.034-0.159-0.067-0.239-0.101 c0.055,0.024,0.109,0.048,0.163,0.074c0.115,0.073,0.239,0.113,0.372,0.119c0.133,0.03,0.266,0.024,0.399-0.018 c0.13-0.031,0.243-0.091,0.34-0.179c0.109-0.071,0.195-0.164,0.258-0.281c0.123-0.232,0.184-0.513,0.101-0.771 c-0.034-0.08-0.067-0.159-0.101-0.239c-0.089-0.15-0.208-0.27-0.359-0.359c-0.421-0.201-0.858-0.364-1.32-0.437 c-0.133-0.042-0.266-0.048-0.399-0.018c-0.133,0.006-0.257,0.046-0.372,0.119c-0.117,0.063-0.21,0.149-0.281,0.258 c-0.088,0.097-0.148,0.21-0.179,0.34c-0.012,0.089-0.024,0.177-0.036,0.266c0.001,0.181,0.046,0.349,0.137,0.505 c0.052,0.067,0.104,0.135,0.156,0.202C44.569,36.796,44.716,36.882,44.885,36.929L44.885,36.929z">
+        </path>
+        <path style="fill:var(--clr-blackgray)"
+          d="M1.322,19.533c0.076,0.18,0.141,0.356,0.254,0.514c0.11,0.155,0.228,0.308,0.363,0.443 c0.182,0.182,0.389,0.335,0.592,0.492c0.476,0.369,0.951,0.737,1.427,1.106c0.091,0.098,0.198,0.166,0.322,0.207 c0.119,0.063,0.248,0.091,0.385,0.086c0.245,0,0.538-0.109,0.707-0.293c0.175-0.191,0.305-0.441,0.293-0.707 c-0.011-0.245-0.089-0.549-0.293-0.707c-0.401-0.311-0.803-0.622-1.204-0.933C3.825,19.475,3.45,19.224,3.18,18.88 c0.052,0.067,0.104,0.135,0.156,0.202c-0.067-0.09-0.125-0.184-0.172-0.286c0.034,0.08,0.067,0.159,0.101,0.239 c-0.005-0.012-0.01-0.023-0.015-0.035c-0.031-0.13-0.091-0.243-0.179-0.34c-0.071-0.109-0.164-0.195-0.281-0.258 c-0.214-0.125-0.53-0.179-0.771-0.101c-0.242,0.078-0.475,0.228-0.598,0.46C1.307,18.982,1.221,19.292,1.322,19.533L1.322,19.533z">
+        </path>
+        <path style="fill:var(--clr-blackgray)"
+          d="M3.406,25.513c0.108-0.117,0.225-0.225,0.351-0.323c-0.067,0.052-0.135,0.104-0.202,0.156 c0.192-0.148,0.402-0.27,0.625-0.365c-0.08,0.034-0.159,0.067-0.239,0.101C4,25.057,4.059,25.034,4.119,25.014 c0.13-0.031,0.243-0.091,0.34-0.179c0.109-0.071,0.195-0.164,0.258-0.281c0.073-0.115,0.113-0.239,0.119-0.372 c0.03-0.133,0.024-0.266-0.018-0.399c-0.078-0.242-0.228-0.475-0.46-0.598c-0.229-0.121-0.517-0.189-0.771-0.101 c-0.299,0.103-0.598,0.233-0.863,0.407c-0.164,0.108-0.32,0.23-0.47,0.356c-0.093,0.078-0.18,0.162-0.262,0.251 c-0.178,0.194-0.293,0.44-0.293,0.707c-0.005,0.138,0.024,0.266,0.086,0.385c0.04,0.124,0.109,0.231,0.207,0.322 c0.191,0.175,0.441,0.305,0.707,0.293C2.958,25.794,3.226,25.709,3.406,25.513L3.406,25.513z">
+        </path>
+      </svg>
     </div>
-  </footer>
+    <div class="container">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="header__profile" style="margin-left: 20px;">
+          <div class="fairy" style="justify-self: center;">
+          </div>
+          <div class="text">
+            <p class="wrap">Natthamon</p>
+            <sup class="wrap">aumntm</sup>
+          </div>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="works.html">My Work</a>
+        <a href="https://drive.google.com/file/d/1fQS-St_Wsit_ESj3u85z8148_0iyiHMm/view?usp=sharing" target="_blank">My
+          Resume</a>
+        <div class="header__sun-mobile">
+          <input id="theme-toggle" type="checkbox">
+          <label for="theme-toggle"></label>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <!-- Content-Left -->
+        <div class="content-left">
+          <div class="title">
+            <div class="name">
+              <div class="white-dots"></div>
+              <h1>Hi</h1>
+            </div>
+            <div class="name">
+              <h1>I'm</h1>
+              <div class="black-dots"></div>
+              <h1 id="wname">AUM</h1>
+            </div>
+            <div class="name">
+              <h1>NATTHAMON</h1>
+              <div class="black-dots"></div>
+            </div>
+            <div class="name">
+              <div class="white-dots"></div>
+              <h1>AONCHAWIENG</h1>
+            </div>
+          </div>
+          <!-- Loader And Button Group -->
+          <div class="btn-group">
+            <div class="loader">
+              <svg viewBox="0 0 18.528 35.424" version="1.1" y="0" x="0" height="369" width="193"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.358 35.05c.435-.175.646-.408.861-.95.374-.94.698-1.52 1.145-2.05.78-.92 1.757-1.638 2.666-1.957.603-.212.9-.204 1.505.041.843.343 1.597.25 2.062-.254.95-1.029 3.95-6.873 5.841-11.376.869-2.07.831-1.882.797-3.962-.034-2.106-.024-2.064-.927-3.887-1.639-3.31-4.426-6.582-7.147-8.392C8.71 1.298 6.715.504 5.296.328c-.718-.09-2.465-.001-3.183.16C.943.752.279 1.268.279 1.917c0 .119.437 1.136.97 2.26.533 1.126 1.044 2.291 1.135 2.591.334 1.106.776 3.567.945 5.27.065.652.357 1.286.751 1.633.419.367 1.351.786 1.964.883.286.044.534.096.553.115.018.018-.129.128-.327.244-.761.446-1.432 1.439-1.74 2.574-.216.802-.194 2.914.045 4.121.24 1.212.575 2.318 1.031 3.403.46 1.092.535 1.458.439 2.135-.223 1.575-1.958 4.03-3.489 4.937-.693.41-.885.587-1.066.98-.173.375-.185.535-.069.953.223.802 1.206 1.326 1.937 1.033z"
+                  style="fill:var(--clr-blackgray)"></path>
+              </svg>
+              <svg viewBox="0 0 2.4 14.4" version="1.1" y="0" x="0" height="150" width="25"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.2 13c0 .641-.447 1.16-1 1.16-.553 0-1-.519-1-1.16V1.4C.2.759.647.24 1.2.24c.553 0 1 .519 1 1.16z"
+                  style="fill:var(--clr-blackgray)"></path>
+              </svg>
+              <svg viewBox="0 0 18.528 35.424" version="1.1" y="0" x="0" height="369" width="193"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.105 35.155c-.42-.196-.627-.482-.902-1.253-.544-1.517-2.145-3.126-3.636-3.652-.69-.243-.887-.242-1.486.01-.617.26-1.342.278-1.798.045-.555-.283-1.76-2.262-3.476-5.708C2.628 22.232.984 18.575.455 17.144c-.236-.637-.237-.655-.237-2.485 0-2.164.01-2.209.9-4.013 1.011-2.049 2.53-4.189 4.185-5.9C7.679 2.293 9.783.995 12.49.313c.782-.197 1.554-.236 2.695-.137 1.619.14 2.38.38 2.882.909.21.22.246.321.243.684-.002.373-.122.67-.959 2.395-1.277 2.63-1.59 3.806-2.035 7.63-.111.951-.316 1.426-.809 1.87-.52.47-1.306.807-2.165.928l-.391.054.35.224c.897.574 1.58 1.674 1.834 2.956.193.969.12 2.791-.164 4.15-.222 1.061-.696 2.518-1.12 3.443-.336.735-.411 1.584-.203 2.3.505 1.738 2.056 3.692 3.736 4.705.693.417.938.83.874 1.476-.104 1.071-1.193 1.706-2.153 1.256z"
+                  style="fill:var(--clr-blackgray)"></path>
+              </svg>
+            </div>
+            <a href="https://drive.google.com/file/d/1fQS-St_Wsit_ESj3u85z8148_0iyiHMm/view?usp=sharing"
+              target="_blank">
+              <button class="btn-resume">
+                <svg class="resume" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M179.503 21.333h225.83A42.667 42.667 0 0 1 448 64v384a42.667 42.667 0 0 1-42.667 42.667H106.667A42.667 42.667 0 0 1 64 448V136.837a21.333 21.333 0 0 1 6.248-15.085l94.17-94.17a21.333 21.333 0 0 1 15.085-6.249z"
+                    style="fill:var(--clr-lightblueyellow)" />
+                  <rect x="85.333" y="149.333" width="149.333" height="64" rx="32" ry="32"
+                    style="fill:var(--clr-babyblueyellow)" />
+                  <path
+                    d="M213.333 51.503v88.994a30.17 30.17 0 0 1-30.17 30.17H94.17A30.17 30.17 0 0 1 64 140.497a30.17 30.17 0 0 1 8.837-21.334L161.83 30.17a30.17 30.17 0 0 1 21.333-8.837 30.17 30.17 0 0 1 30.17 30.17z"
+                    style="fill:#dfe5ff" />
+                  <rect x="69.49" y="80.915" width="138.353" height="30.17" rx="15.085" ry="15.085"
+                    transform="rotate(-45 138.667 96)" style="fill:#eff2ff" />
+                  <rect x="234.667" y="85.333" width="149.333" height="170.667" rx="21.333" ry="21.333"
+                    style="fill:var(--clr-bluewhite)" />
+                  <path
+                    d="M170.667 426.667h-21.334a21.333 21.333 0 0 1 0-42.667h21.334a21.333 21.333 0 0 1 0 42.667zM362.667 426.667H256A21.333 21.333 0 0 1 256 384h106.667a21.333 21.333 0 0 1 0 42.667zM362.667 341.333H149.333a21.333 21.333 0 1 1 0-42.666h213.334a21.333 21.333 0 1 1 0 42.666z"
+                    style="fill:#163969" />
+                  <circle cx="309.333" cy="138.667" r="32" style="fill:var(--clr-goldpink)" />
+                  <path d="M341.333 192h-64a21.333 21.333 0 0 0 0 42.667h64a21.333 21.333 0 1 0 0-42.667z"
+                    style="fill:var(--clr-goldpink)" />
+                  <rect x="256" y="256" width="106.667" height="21.333" rx="10.667" ry="10.667" style="fill:#a4b1ff" />
+                </svg>
+                My Resume
+              </button>
+            </a>
+            <a href="works.html">
+              <button class="btn-work">
+                <svg class="work" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #dad7e5
+                      }
+
+                      .cls-2 {
+                        fill: #edebf2
+                      }
+
+                      .cls-7 {
+                        fill: #374f68
+                      }
+                    </style>
+                  </defs>
+                  <g id="Computer_Web_Coding" data-name="Computer Web Coding">
+                    <path class="cls-1" d="M45 9v24H3V9a2 2 0 0 1 2-2h38a2 2 0 0 1 2 2z" />
+                    <path class="cls-2" d="M45 9v22H30A24 24 0 0 1 6 7h37a2 2 0 0 1 2 2z" />
+                    <path style="fill:var(--clr-lightblueyellow)" d="M5 9h38v24H5z" />
+                    <path class="cls-1" d="M45 33v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4z" />
+                    <path class="cls-2" d="M45 33v4H10a4 4 0 0 1-4-4z" />
+                    <path style="fill:var(--clr-babyblueyellow)" d="M9 7h30v26H9z" />
+                    <path d="M39 7v24h-3A24 24 0 0 1 12 7z" style="fill:var(--clr-lightblueyellow)" />
+                    <path style="fill:#c6c3d8" d="M19 39h10v8H19z" />
+                    <path class="cls-1" d="M27 47h-8v-6h2a6 6 0 0 1 6 6z" />
+                    <path class="cls-1" d="M33 47H15a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2z" />
+                    <path class="cls-7" d="M39 3v4H9V3a2 2 0 0 1 2-2h26a2 2 0 0 1 2 2z" />
+                    <path d="M39 3v4H12V3a2 2 0 0 1 2-2h23a2 2 0 0 1 2 2z" style="fill:#425b72" />
+                    <path class="cls-7" d="M25 36a1 1 0 0 0-2 0 1 1 0 0 0 2 0z" />
+                    <path d="M14 4a1 1 0 0 0-2 0 1 1 0 0 0 2 0z" style="fill:#db5669" />
+                    <path d="M18 4a1 1 0 0 0-2 0 1 1 0 0 0 2 0z" style="fill:#6fabe6" />
+                    <path d="M22 4a1 1 0 0 0-2 0 1 1 0 0 0 2 0z" style="fill:#9dcc6b" />
+                    <path class="cls-7"
+                      d="M20 24c-.56 0-.3.12-4.71-4.29a1 1 0 0 1 0-1.42l4-4a1 1 0 0 1 1.42 1.42L17.41 19l3.3 3.29A1 1 0 0 1 20 24zM28 24a1 1 0 0 1-.71-1.71l3.3-3.29-3.3-3.29a1 1 0 0 1 1.42-1.42l4 4a1 1 0 0 1 0 1.42C28.34 24.08 28.56 24 28 24zM22 23.8l2-10a1 1 0 0 1 2 .4l-2 10a1 1 0 0 1-2-.4z" />
+                  </g>
+                </svg>
+                My Work
+                <svg class="work arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path class="fil1"
+                    d="M17 8v4a1 1 0 0 1-2 0v-1.586l-6.293 6.293a1 1 0 1 1-1.414-1.414L13.586 9H12a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1z"
+                    data-name="Up Right" />
+                </svg>
+                <!-- Star Affect In Work Button -->
+                <div class="star-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                      <path class="fil0"
+                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="star-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                      <path class="fil0"
+                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="star-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                      <path class="fil0"
+                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="star-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                      <path class="fil0"
+                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="star-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                      <path class="fil0"
+                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="star-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                      <path class="fil0"
+                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Content Right -->
+        <div class="content-Right">
+          <!-- All Skills -->
+          <div class="my-skills">
+            <p>My Skills</p>
+            <ul class="ul-f">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>React.js</li>
+            </ul>
+            <ul class="ul-l">
+              <li>Bootstrap</li>
+              <li>Responsive Design</li>
+              <li>JQuery</li>
+              <li>Java</li>
+              <li>Go</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <!-- My Contact -->
+          <div class="my-contact">
+            <ul class="contact" id="contact">
+              <li>
+                <a href="mailto:natthamon.acw@gmail.com" aria-label="gmail" target="_blank">
+                  <span class="tooltip">natthamon.acw@gmail.com</span>
+                  <svg data-name="1-Mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path
+                      d="M28 28H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4zM4 6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z" />
+                    <path
+                      d="M16 18a1 1 0 0 1-.618-.214l-14-11a1 1 0 1 1 1.236-1.572L16 15.728 29.382 5.214a1 1 0 1 1 1.236 1.572l-14 11A1 1 0 0 1 16 18z" />
+                    <path
+                      d="M2 27a1 1 0 0 1-.707-1.707l11-11a1 1 0 0 1 1.414 1.414l-11 11A1 1 0 0 1 2 27zM30 27a1 1 0 0 1-.707-.293l-11-11a1 1 0 0 1 1.414-1.414l11 11A1 1 0 0 1 30 27z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+66658812673" aria-label="tel" target="_blank">
+                  <span class="tooltip">0658816273</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g data-name="Call Loud">
+                      <path
+                        d="M19.91 12.87a3.08 3.08 0 0 0-4.34 0l-1.47 1.45a1.08 1.08 0 0 1-1.5 0L9.68 11.4C8.1 9.82 12 9.14 12 6.26c0-1.69-1.13-2.4-3.09-4.36a3.14 3.14 0 0 0-4.34 0L2.41 4.09c-4.72 4.72 2.88 16.09 11.06 18.49 2.27.67 4.78.67 6.44-1l2.19-2.18a3.07 3.07 0 0 0 0-4.34zm.78 5.13-2.19 2.17c-.89.89-2.52 1.07-4.47.5C6.67 18.5.7 8.63 3.83 5.5c3.36-3.36 2.52-3.37 5.89 0 1.57 1.57-2.36 2.32-2.36 5.15 0 1.68 1 2.31 3.83 5.09a3.14 3.14 0 0 0 4.33 0L17 14.28a1.06 1.06 0 0 1 1.51 0l2.19 2.19a1.08 1.08 0 0 1-.01 1.53z" />
+                      <path d="M13.5 9a1.5 1.5 0 0 1 1.5 1.5 1 1 0 0 0 1 1c2 0 .91-4.5-2.5-4.5a1 1 0 0 0 0 2z" />
+                      <path d="M13.5 6a4.51 4.51 0 0 1 4.5 4.5 1 1 0 0 0 1 1c2.47 0 .45-7.5-5.5-7.5a1 1 0 0 0 0 2z" />
+                      <path d="M13.5 3a7.5 7.5 0 0 1 7.5 7.5 1 1 0 0 0 1 1c2.82 0 0-10.5-8.5-10.5a1 1 0 0 0 0 2z" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://line.me/ti/p/RvXxM-JNux" aria-label="line" data-social="line" target="_blank">
+                  <span class="tooltip">aumnatthamon</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-line"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.15.15 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157m.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832l-.013-.015v-.001l-.01-.01-.003-.003-.011-.009h-.001L7.88 4.79l-.003-.002-.005-.003-.008-.005h-.002l-.003-.002-.01-.004-.004-.002-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.2.2 0 0 0 .039.038l.001.001.01.006.004.002.008.004.007.003.005.002.01.003h.003a.2.2 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.16.16 0 0 0-.108.044h-.001l-.001.002-.002.003a.16.16 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.16.16 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a id="spotify" aria-label="spotify" target="_blank" onclick="spotifyFunc()">
+                  <span class="tooltip">spotify</span>
+                  <svg fill="#ffffff" width="16px" height="16px" viewBox="0 0 256 256" id="Flat"
+                    xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" style="fill: var(--clr-white); padding: 2px;">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.1179,104.1179,0,0,0,128,24Zm28.624,144.65722a8.00058,8.00058,0,0,1-10.73633,3.56641,39.98258,39.98258,0,0,0-35.85156.04,7.99966,7.99966,0,1,1-7.20117-14.28711,55.97479,55.97479,0,0,1,50.22217-.05566A7.99977,7.99977,0,0,1,156.624,168.65719Zm14.79737-28.30664a8.00153,8.00153,0,0,1-10.76221,3.49024,71.9412,71.9412,0,0,0-65.40234.042,7.99976,7.99976,0,1,1-7.29-14.24219,87.94,87.94,0,0,1,79.96484-.05176A7.9994,7.9994,0,0,1,171.42139,140.35055Zm14.82666-28.36426a8.00037,8.00037,0,0,1-10.77246,3.458,104.1903,104.1903,0,0,0-95.03614.04492,8,8,0,1,1-7.3291-14.22265,120.19311,120.19311,0,0,1,109.68066-.05274A7.99973,7.99973,0,0,1,186.24805,111.98629Z">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+                <iframe id="mySpotify"
+                  src="https://open.spotify.com/embed/playlist/7x6h0QtFioCjXtz6N3DVNR?utm_source=generator" width="100%"
+                  height="152" frameBorder="0" allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"></iframe>
+              </li>
+            </ul>
+            <!-- Toggle Button -->
+            <div class="toggle" id="toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 15a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 12.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 15z" />
+              </svg>
+            </div>
+          </div>
+          <!-- Location And Age -->
+          <div class="location-age">
+            <!-- <div class="grid-lo"> -->
+            <div class="location">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                <ellipse cx="64" cy="94.379" rx="54.5" ry="13.333" style="fill:var(--clr-babyblueyellow)" />
+                <ellipse cx="64" cy="94.379" rx="33.613" ry="7.176" style="fill:var(--clr-blackgray)" />
+                <path
+                  d="M64 20.288a29.333 29.333 0 0 0-29.333 29.333C34.667 71.288 64 95.871 64 95.871s29.333-23.917 29.333-46.25A29.333 29.333 0 0 0 64 20.288zm0 42.289a12.956 12.956 0 1 1 12.956-12.956A12.956 12.956 0 0 1 64 62.577z"
+                  style="fill:var(--clr-blackgray)" />
+                <path
+                  d="M59.75 20.6a29.337 29.337 0 0 0-25.083 29.021c0 16.51 17.023 34.7 25.13 42.432 8.144-7.624 25.037-25.479 25.037-42.432A29.337 29.337 0 0 0 59.75 20.6zM64 62.577h-8.5a12.956 12.956 0 1 1 0-25.912H64a12.956 12.956 0 1 1 0 25.912z"
+                  style="fill:var(--clr-white)" />
+              </svg>
+              <p>Ladprao, Bangkok, Thailand</p>
+            </div>
+            <div class="age">
+              <h1>Age</h1>
+              <p>23</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- About Me -->
+      <div class="content">
+        <div class="about-me">
+          About Me
+          <hr>
+          <p>
+            I am Ms. Natthamon Aonchawieng, graduated with a bachelor's degree from the Faculty of Information Science
+            in Information Technology.
+            I have had an internship experience in the frontend developer position for 4 months and have the ability
+            to
+            use HTML CSS JavaScript very well and have basic knowledge of using React.js and others...
+
+            Because I don't have much work experience, I want to work with an organization to apply the knowledge and
+            abilities I have and give myself the opportunity to learn how to actually work and develop their own
+            knowledge and skills better in order to be a quality personnel with the organization.
+          </p>
+        </div>
+        <!-- Work Preview -->
+        <a href="works.html">
+          <div class="my-work">
+            <p class="title">
+              Work
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 20 15">
+                <path
+                  d="M17 8v4a1 1 0 0 1-2 0v-1.586l-6.293 6.293a1 1 0 1 1-1.414-1.414L13.586 9H12a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1z"
+                  style="fill:#000000" data-name="Up Right" />
+              </svg>
+            </p>
+            <hr>
+            <div class="work">
+              <div class="w-card">
+                <div class="w-text">Front-End Developer Intern
+                </div>
+                <img src="public/bwsp.png" alt="">
+              </div>
+              <div class="w-card">
+                <div class="w-text">Graduation Project
+                </div>
+                <img src="public/carcare.png" alt="">
+              </div>
+              <div class="w-card">
+                <div class="w-text">Mini Project
+                </div>
+                <img src="public/mini-p.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script type="module" src="./src/main.js"></script>
+  <script>
+    // spotify function
+    function spotifyFunc() {
+      var spotify = document.getElementById("mySpotify");
+      if (spotify.style.display === "block") {
+        spotify.style.display = "none";
+      } else {
+        spotify.style.display = "block";
+      }
+    }
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>
